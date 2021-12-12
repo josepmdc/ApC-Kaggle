@@ -50,14 +50,18 @@ Heres' a description of all the attributes:
 `pip install -r requirements.txt`
 
 ## Demo
-A demo is available, you can use it running the following command in the
-terminal:
+The best way to see the results is to look at the notebook in the notebooks folder, but if you want there's a demo available. 
+You can use it running the following command in the terminal:
 
 ```sh
 python3 src/main.py
 ```
 
+It will ask if you want to load the pretrained models from the models folder. If you say no it will train the models again.
+
 ## Models
+The following models are implemented:
+
 **Linear Regression** R2 score = 0.55
 
 **Decision Tree Regressor**: R2 score = 0.66
