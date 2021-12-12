@@ -15,7 +15,7 @@ le = LabelEncoder()
 categorical_cols = df.select_dtypes(exclude=[np.number]).columns.to_list()
 df[categorical_cols] = df[categorical_cols].apply(lambda col: le.fit_transform(col))
 
-X = df.drop('love', axis = 1)
+X = df.drop(['love', 'rating'], axis = 1)
 y = df['love']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
 
